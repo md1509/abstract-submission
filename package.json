@@ -1,19 +1,23 @@
 {
   "name": "abstract-submission",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build": "npm rebuild sqlite3 --build-from-source"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Abstract submission system for conferences",
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.1",
     "nodemailer": "^6.9.16",
     "sqlite3": "^5.1.7",
     "uuid": "^11.0.3"
+  },
+  "engines": {
+    "node": ">=16 <18"
   }
 }
